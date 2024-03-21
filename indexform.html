@@ -7,6 +7,51 @@
 </head>
 <body>
     <!-- create a simple form to take user inputs such as name, email, password -->
-    
+    <form action="index.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <br>
+        <input type="submit" value="Submit">
+
+        <!-- add css to make the form nice -->
+        <style>
+            form {
+                width: 50%;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+
+            input[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #555;
+            }
+
 </body>
 </html>
